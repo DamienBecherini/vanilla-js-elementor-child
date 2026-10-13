@@ -1,0 +1,9 @@
+#moving-header {
+  // MENU ONSCROLL ANIMATION START
+  transition: top 0.4s ease-in-out;
+
+  &.js-slide-up {
+    top: -100px !important;
+  }
+  // MENU ONSCROLL ANIMATION END
+}

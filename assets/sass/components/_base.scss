@@ -1,0 +1,61 @@
+html {
+  font-size: 62.5%; // 1 REM = 10px instead of 16px
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  // --prefers-reduced-motion: 0s;
+
+  header + div {
+    flex-grow: 1;
+  }
+}
+
+.flex-row {
+  //border: 1px solid red;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.js-sliding-panel {
+  display: none;
+}
+
+main {
+  flex-grow: 1;
+  min-height: 400px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    --prefers-reduced-motion: 0s;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body a {
+  color: unset;
+}

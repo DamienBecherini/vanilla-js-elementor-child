@@ -1,0 +1,55 @@
+.hidden {
+  display: none !important;
+}
+
+section.hidden + .separator {
+  display: none;
+}
+
+.margin-top-m {
+  margin-top: 1rem;
+}
+
+.absolute-centered {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.x-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.hover-reduce {
+  transition: 0.4s;
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underscore {
+  text-decoration: underline;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.info-bulle {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: pointer;
+}

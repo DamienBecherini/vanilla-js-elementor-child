@@ -1,0 +1,64 @@
+{
+  "name": "vanilla-js-elementor-child",
+  "version": "1.0.0",
+  "description": "Thème enfant WordPress pour Hello Elementor : PHP orienté objet, composants JavaScript natifs, compilation Sass et JS avec Grunt.",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamienBecherini/vanilla-js-elementor-child.git"
+  },
+  "author": "Damien BECHERINI",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@lodder/grunt-postcss": "^3.1.1",
+    "autoprefixer": "^10.4.0",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.27.7",
+    "concurrently": "^6.3.0",
+    "core-js": "^3.19.1",
+    "cssnano": "^5.0.9",
+    "dir-archiver": "^1.1.1",
+    "eslint": "^8.2.0",
+    "grunt": "^1.4.1",
+    "grunt-babel": "^8.0.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-browserify": "^6.0.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-dart-sass": "^2.0.1",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "postcss": "^8.4.5",
+    "postcss-browser-reporter": "^0.6.0",
+    "postcss-reporter": "^7.0.4",
+    "rtlcss": "^3.5.0",
+    "sass": "^1.43.4"
+  },
+  "scripts": {
+    "dev": "grunt --mode=dev",
+    "build": "grunt",
+    "lint:js": "eslint \"assets/js/**/*.js\" Gruntfile.js",
+    "compile:rtl": "rtlcss style.css style-rtl.css",
+    "bundle": "dir-archiver --src . --dest ../vanilla-js-elementor-child.zip --exclude .DS_Store .editorconfig .eslintignore .eslintrc .git .gitattributes .github .gitignore build Gruntfile.js node_modules package-lock.json package.json phpcs.xml.dist README.md style.css.map"
+  },
+  "browserslist": [
+    ">0.1%",
+    "not dead"
+  ],
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "blacklist": {},
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  }
+}

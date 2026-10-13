@@ -1,0 +1,84 @@
+#hero-right-col {
+  container-type: inline-size;
+  container-name: herocontainer;
+
+  h1::first-letter {
+    padding-left: 1.4rem;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+  }
+
+  .elementor-button .elementor-button-icon {
+    margin-left: 8rem;
+  }
+}
+
+@container herocontainer (width < 789px ) {
+  #hero-right-col {
+    h1 {
+      font-size: 3.37vw;
+    }
+
+    .elementor-button .elementor-button-icon {
+      margin-left: 6rem;
+    }
+  }
+}
+
+@container herocontainer (width < 740px ) {
+  #hero-right-col {
+    h1 {
+      font-size: 3.15vw;
+    }
+
+    .elementor-button {
+      .elementor-button-icon {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+@container herocontainer (width < 650px ) {
+  #hero-right-col {
+    .elementor-button {
+      font-size: 1.58rem;
+
+      .elementor-button-icon {
+        // display: none;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (width < 1024px) {
+  #hero-right-col h1.elementor-heading-title {
+    font-size: 5vw !important;
+  }
+}
+
+@media (width < 768px) {
+  #hero-right-col {
+    h1.elementor-heading-title {
+      font-size: 8vw !important;
+    }
+    .elementor-button {
+      font-size: 1.8rem;
+
+      .elementor-button-icon {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+@media (width < 450px) {
+  #hero-right-col {
+    h1.elementor-heading-title {
+      font-size: 9.2vw !important;
+    }
+  }
+}

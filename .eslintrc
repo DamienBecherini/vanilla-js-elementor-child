@@ -1,0 +1,21 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "overrides": [
+        {
+            "files": [ "Gruntfile.js" ],
+            "parserOptions": { "sourceType": "script" },
+            "env": { "browser": false, "node": true }
+        }
+    ]
+}

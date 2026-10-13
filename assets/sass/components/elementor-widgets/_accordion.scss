@@ -1,0 +1,16 @@
+// Hide first accordion element
+// It's an alternative way to have the first accordion closed by default
+// without using Javascript
+// You need to git the class .hide-first-element to the accordion you want to patch
+.hide-first-element {
+  .elementor-accordion .elementor-accordion-item:first-of-type {
+    display: none;
+  }
+  .elementor-accordion {
+    border-top: 1px solid #d4dff2c7;
+  }
+}
+
+.text-justify-inside * {
+  text-align: justify;
+}

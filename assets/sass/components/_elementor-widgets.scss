@@ -1,0 +1,15 @@
+// @use "elementor-widgets/accordion";
+@use "elementor-widgets/carrousel";
+@use "elementor-widgets/links";
+
+// STOP OVERFLOW (ENTIRE SITE):
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+//REMOVE UNWANTED SPACE FROM THE BOTTOM OF THE TEXT EDITOR:
+.elementor-widget-text-editor p:last-child {
+  margin-bottom: 0px;
+}

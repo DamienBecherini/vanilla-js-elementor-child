@@ -1,0 +1,32 @@
+// @use "header/header-hide-on-scroll";
+
+#main-menu {
+  .e--pointer-double-line {
+    .elementor-item::before,
+    .elementor-item::after {
+      height: 0;
+      border-radius: 50px;
+    }
+
+    .elementor-item::before {
+      border: 2.5px solid var(--e-global-color-f954638);
+    }
+
+    .elementor-item::after {
+      border: 2.5px solid var(--e-global-color-primary);
+      left: unset;
+      right: -10px;
+    }
+
+    .elementor-item:hover {
+      &::before {
+        width: 24px;
+      }
+
+      &::after {
+        width: 24px;
+        right: 0;
+      }
+    }
+  }
+}

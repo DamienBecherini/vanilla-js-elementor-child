@@ -1,0 +1,23 @@
+/*! 
+Theme Name: vanilla-js-elementor-child - Hello Elementor Child
+Author: Damien BECHERINI
+Author URI: https://damien.becherini.fr
+Template: hello-elementor
+Version: 1.0.0
+Text Domain: vanilla-js-elementor-child
+*/
+
+@import "config";
+
+@import "components/base";
+@import "components/utilities";
+
+@import "components/hide_wordpress_admin_bar";
+
+@import "components/elementor-widgets";
+@import "components/scroll-top-button";
+
+@import "components/header";
+
+@import "components/home";
+@import "components/hero";
