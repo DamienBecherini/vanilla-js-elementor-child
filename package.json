@@ -8,7 +8,7 @@
     "url": "git+https://github.com/DamienBecherini/vanilla-js-elementor-child.git"
   },
   "author": "Damien BECHERINI",
-  "license": "CC0-1.0",
+  "license": "GPL-2.0-or-later",
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",

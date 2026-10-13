@@ -1,6 +1,6 @@
 # Vanilla JS Elementor Child
 
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: GPL v2+](https://img.shields.io/badge/License-GPL_v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 
 Thème enfant WordPress pour [Hello Elementor](https://wordpress.org/themes/hello-elementor/).
 
@@ -66,4 +66,4 @@ npm run bundle
 
 ## Licence
 
-[CC0 1.0 Universal](LICENSE) : domaine public.
+[GNU GPL v2 ou ultérieure](LICENSE), comme WordPress et le thème parent Hello Elementor.
